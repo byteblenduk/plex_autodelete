@@ -14,8 +14,8 @@ RUN pip install -r requirements.txt && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Set environment variables if needed
-# ENV PLEX_URL=<your_plex_url>
-# ENV PLEX_TOKEN=<your_plex_token>
+ENV PLEX_URL=""
+ENV PLEX_TOKEN=""
 
 # Command to run your script
 CMD ["python", "your_script.py"]
